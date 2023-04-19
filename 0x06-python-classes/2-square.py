@@ -9,6 +9,9 @@ class Square:
         """initializes the square
         Arg: 
             size(int): size of a side of the square
+        Raises:
+            TypeError: when size is not integer
+            ValueError: when size is < 0
         """
         
         if type(size) != int:
