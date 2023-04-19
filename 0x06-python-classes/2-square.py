@@ -3,8 +3,7 @@
 
 
 class Square:
-    """rep a class"""
-    
+    """Rep a square"""    
     def __init__(self, size=0):
         """Initializing this square class
         Args:
