@@ -6,15 +6,15 @@ class Square:
     """rep a class"""
     
     def __init__(self, size=0):
-        """initializes the square
-        Args: 
-            size(int): size of a side of the square
+        """Initializing this square class
+        Args:
+            size: reps the size of the square defined
         Raises:
-            TypeError: when size is not integer
-            ValueError: when size is < 0
+            TypeError: if size is not integer
+            ValueError: if size is less than zero
         """
         
-        if type(size) is not int:
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
                 raise ValueError("size must be >= 0")
