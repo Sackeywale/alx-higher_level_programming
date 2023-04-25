@@ -1,30 +1,30 @@
 #!/usr/bin/python3
-"""Rectangle that define a rectangle"""
+"""Class that defines a rectangle"""
 
 
 class Rectangle:
-    """class Rectangle that defines a rectangle
-    """
-    def __init__(self, width, height):
-        """Initialize the rectangle
-        args: 
-            width: smallest side of the rectangle
-            height: biggest side of the rectange
-        raises:
-            TypeError: must be an integer
-            ValueError: must be >= 0
+    """represents a rectangle"""
+
+    def __init__(self, width=0, height=0):
+        """Initializing rectangle class
+        Args:
+            width: represents the width of the rectangle
+            height: represents the height of the rectangle
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than zero
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
-        """to retrieve the it"""
-        return (self.__width)
+        """retrieves width attribute"""
+        return self.__width
 
     @width.setter
     def width(self, value):
-        """to set it"""
+        """sets width attribute"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -33,12 +33,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """to retrieve it"""
-        return (self.__height)
+        """retrieves height attribute"""
+        return self.__height
 
     @height.setter
     def height(self, value):
-        """to set it"""
+        """sets height attribute"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
