@@ -4,8 +4,13 @@
 
 class Mylist(list):
     """
-    reps the class
+        This class inherits from list.
+        Attributes:
+        Methods:
+            print_sorted - prints the list in ascending order
     """
+        def print_sorted(self):
+            
     def print_sorted(self):
         """
          prints the list, but sorted
